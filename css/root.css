@@ -100,7 +100,7 @@ body {
 
 .hero-section {
     position: relative;
-    height: 50vh; /* Adjust the height as needed */
+    height: 80vh; /* Adjust the height as needed */
     background-image: url(images/stockphotos/psfrontpagemicrophonecrowd.jpeg);
     background-size: cover;
     background-position: center;
@@ -136,12 +136,12 @@ body {
   }
   
   .hero-section h1 {
-    font-size: 48px; /* Adjust the font size as needed */
+    font-size: 85px; /* Adjust the font size as needed */
     color: #fff;
   }
   
   .hero-section p {
-    font-size: 18px; /* Adjust the font size as needed */
+    font-size: 24px; /* Adjust the font size as needed */
     color: #fff;
     margin-bottom: 40px; /* Add some spacing */
 
@@ -151,7 +151,8 @@ body {
     display: inline-block;
     padding: 12px 30px;
     border-radius: 30px;
-    background-image: linear-gradient(to right, #ff6ac1, #a531f9); /* Adjust the gradient colors */
+    background-image: linear-gradient(to right, #ff6ac1, #a531f9);
+    font-size: 18px; /* Adjust the gradient colors */
     color: #ffffff;
     text-decoration: none;
   }
