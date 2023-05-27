@@ -193,6 +193,7 @@ body {
     background: linear-gradient(90deg, #FF00A6, #5A00FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text; /* Standard */
   }
   
   .result-box .description {
@@ -206,7 +207,9 @@ body {
     background: linear-gradient(90deg, #FF00A6, #5A00FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text; /* Standard */
   }
+  
   
   @keyframes boxAnimation {
     0% {
