@@ -96,11 +96,11 @@ body {
     opacity: 0.8;
   }
 
-/* #middle# */
+/* #first image# */
 
 .hero-section {
     position: relative;
-    height: 80vh; /* Adjust the height as needed */
+    height: 60vh; /* Adjust the height as needed */
     background-image: url(images/stockphotos/psfrontpagemicrophonecrowd.jpeg);
     background-size: cover;
     background-position: center;
@@ -155,6 +155,135 @@ body {
     font-size: 18px; /* Adjust the gradient colors */
     color: #ffffff;
     text-decoration: none;
+  }
+
+/* #RESULTS# */
+.results-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .results-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .result-box {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    flex-basis: calc(33.33% - 20px); /* Adjust the value as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: boxAnimation 0.5s ease-in-out;
+  }
+  
+  .result-box .percentage {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .result-box .percentage-text {
+    font-size: 85px;
+    color: #fff;
+    background: linear-gradient(90deg, #FF00A6, #5A00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .result-box .description {
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  .result-box .description .highlight-gradient {
+    background: linear-gradient(90deg, #FF00A6, #5A00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes boxAnimation {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+
+  /* #TESTIMONIALS# */
+.testimonial-section {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+    margin-top: 40px;
+  }
+  
+  .testimonial {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-info {
+    flex-grow: 1;
+  }
+  
+  .testimonial-image {
+    margin-left: 20px;
+  }
+  
+  .testimonial-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image fills the container */
+  }
+  
+  .testimonial-rating {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-school {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-student {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-quote {
+    margin-bottom: 20px;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer styles (just for reference, adjust as needed) */
+  footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
   }
   
   
@@ -214,9 +343,10 @@ body {
     margin-bottom: 0;
   }
   
-  .copyright {
-    margin-top: 20px;
+  .footer-container .copyright {
     font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 0;
   }
-  
-
