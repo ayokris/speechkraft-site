@@ -147,6 +147,7 @@ body {
     border-radius: 30px;
     background-image: linear-gradient(to right, #ff6ac1, #a531f9);
     font-size: 18px; /* Adjust the gradient colors */
+    font-weight: bold;
     color: #ffffff;
     text-decoration: none;
   }
