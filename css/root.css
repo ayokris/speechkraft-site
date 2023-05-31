@@ -1,10 +1,10 @@
 /* Fonts */
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
   }
   
   h1, h2, h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 900;
   }
   
@@ -18,7 +18,7 @@ body {
 .navbar-container {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .logo {
@@ -47,7 +47,12 @@ body {
   }
   
   .nav-link {
-    margin: 0 10px; /* Adjust as needed */
+    margin: 0 20px; /* Adjust as needed */
+    color: #000;
+    text-decoration: none;  /* Remove the underline */
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 19px;       
   }
   
   .dropdown {
@@ -60,6 +65,10 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
+    text-decoration: none;  /* Remove the underline */
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 19px;         
   }
   
   .dropdown-content {
@@ -76,6 +85,10 @@ body {
     padding: 5px;
     text-decoration: none;
     color: #333;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 19px;         
+
   }
   
   .dropdown:hover .dropdown-content {
@@ -89,7 +102,7 @@ body {
   .button {
     background: linear-gradient(45deg, #ff0080, #8000ff);
     color: #fff;
-    padding: 8px 16px;
+    padding: 8px 20px;
     border: none;
     border-radius: 20px;
     text-decoration: none;
@@ -103,7 +116,7 @@ body {
   /* Hero Section */
   .hero-section {
     position: relative;
-    height: 65vh; /* Adjust the height as needed */
+    height: 75vh; /* Adjust the height as needed */
     background-image: url(images/stockphotos/psfrontpagemicrophonecrowd.jpeg);
     background-size: cover;
     background-position: center;
@@ -111,7 +124,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: auto;
+    margin-bottom: -20px;
   }
   
   .hero-section::before {
@@ -127,22 +140,35 @@ body {
   .container {
     position: relative;
     z-index: 1;
+    max-width: 900px; /* Adjust the container max-width as needed */
+    margin: 0 auto;
   }
   
   .hero-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
   }
-  
-  .hero-section h1 {
-    font-size: 85px; /* Adjust the font size as needed */
-    color: #fff;
+
+  .gradient-text {
+    background: linear-gradient(to right, #ff6ac1, #a531f9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    font-size: 80px;
+    width: 100%;
+    transform: scale(1.12); /* Scale the text by 1.2x */
+    transform-origin: center; /* Adjust the transform origin as needed */
+}
+
+  .gradient-text span {
+    display: inline-block;
   }
-  
+
   .hero-section p {
     font-size: 24px; /* Adjust the font size as needed */
     color: #fff;
@@ -158,15 +184,15 @@ body {
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
+    margin-bottom: -10px;
   }
   
 /* Results Section */
 .results-section {
     background-color: #f5f5f5;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding: 3px 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
   }
   
   .results-grid {
@@ -189,8 +215,6 @@ body {
     text-align: center;
     animation: boxAnimation 0.5s ease-in-out;
   }
-  
-  
   
   .result-box .percentage {
     font-size: 32px;
@@ -397,8 +421,6 @@ body {
     color: #777;
     margin-bottom: 30px;
 }
-
-/* Add more custom styles as needed */
 
 /* CONTACT FORM.css */
 
