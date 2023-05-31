@@ -14,24 +14,31 @@ body {
     padding: 10px;
   }
   
-  .navbar-container {
+/* Add CSS rules to position the logo and company name */
+.navbar-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo img {
     width: 100%;
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto;
-  }
-  
-  .logo img {
-    width: 50px; /* Adjust as needed */
-  }
-  
-  .company-name {
-    font-size: 20px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.company-name {
+    font-size: 24px;
     font-weight: bold;
-    margin-left: 10px; /* Adjust as needed */
-  }
+    margin-right: auto;
+}
+
   
   .nav-links {
     display: flex;
