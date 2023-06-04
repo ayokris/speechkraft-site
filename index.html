@@ -1,164 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="icon" type="image/png" href="img/speechkraft logo/transparentcraneonlyw:whiteinside.png">
+
     <title>SpeechKraft</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap;
-    ">
-    <link href="css/root.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/logo/transparentcraneonlyw:whiteinside.png">
-    <style>
-        .nav-link, .dropdown-btn {
-            text-decoration: none;  /* Remove the underline */
-            font-family: "Inter";
-            font-weight: 700;
-            font-size: 19px;        }
-    </style>
-</head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/speechkraft logo/transparentcraneonly.png" alt="Logo" class="logo">
+          SpeechKraft
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+            </li>
 
-<body>
-    <header>
-        <div class="navbar-container">
-            <div class="logo">
-                <img src="images/logo/transparentcraneonly.png" alt="Logo">
-            </div>
-            <div class="company-name">SpeechKraft</div>
-            <div class="nav-links">
-                <a href="#" class="nav-link">Home</a>
-                <div class="dropdown">
-                    <button class="dropdown-btn">Courses</button>
-                    <div class="dropdown-content">
-                        <div class="dropdown-box">
-                            <a href="#">Primary K-6</a>
-                            <a href="#">High School Year 7-12</a>
-                            <a href="#">Personalised Coaching</a>
-                        </div>
-                    </div>
-                </div>
-                <a href="aboutus.html" class="nav-link">About Us</a>
-                <a href="contact.html" class="nav-link">Contact Us</a>
-            </div>
-            <div class="get-in-touch">
-                <a href="Bookasession.html" class="button">Book a Session</a>
-            </div>
+            </ul>
+          </div>
         </div>
-    </header>
+      </nav>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
-    <section class="hero-section" style="background-image: url('images/stockphotos/psfrontpagemicrophonecrowd.jpeg');">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="content">
-                <h1 class="gradient-text">Speak <span>with</span> <span>Power</span>.</h1>
-                <p>Unlock your public speaking potential and learn how to captivate audiences through personalized
-                    coaching.</p>
-                <a class="gradient-button" href="#">Book a Session</a>
-            </div>
-        </div>
-    </section>
-    
-
-    <section class="results-section">
-        <div class="container">
-            <h2>OUR RESULTS</h2>
-            <div class="results-grid">
-                <div class="result-box">
-                    <div class="percentage">
-                        <span class="percentage-text" data-text="96%">96%</span>
-                    </div>
-                    <div class="description">Increased their <span class="highlight-gradient">speaking confidence</span>
-                    </div>
-                </div>
-
-                <div class="result-box">
-                    <div class="percentage">
-                        <span class="percentage-text" data-text="85%">85%</span>
-                    </div>
-                    <div class="description">Competed in high-level <span class="highlight-gradient">prestigious competitions</span>
-                    </div>
-                </div>
-
-                <div class="result-box">
-                    <div class="percentage">
-                        <span class="percentage-text" data-text="63%">63%</span>
-                    </div>
-                    <div class="description">Achieved <span class="highlight-gradient">top 10</span> ranking</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonial-section">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <div class="testimonial-info">
-                    <p class="testimonial-rating">⭐️⭐️⭐️⭐️⭐️</p>
-                    <p class="testimonial-school">Killara High School</p>
-                    <p class="testimonial-student">S. Elliot — Y9</p>
-                    <p class="testimonial-quote">"I am amazed at the transformation in my public speaking abilities
-                        since working with SpeechKraft. Their tailored coaching sessions have refined my speaking style,
-                        improved my elocution, and instilled confidence in my delivery. Thanks to their guidance, I now
-                        speak with clarity, conviction, and captivate my audience like never before."</p>
-                </div>
-                <div class="testimonial-image">
-                    <img src="images/testimonialkids/primaryschoolreduniformgirl.png" alt="Kid Image">
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-info">
-                    <p class="testimonial-rating">⭐️⭐️⭐️⭐️⭐️</p>
-                    <p class="testimonial-school">Killara High School</p>
-                    <p class="testimonial-student">S. Elliot — Y9</p>
-                    <p class="testimonial-quote">"I am amazed at the transformation in my public speaking abilities
-                        since working with SpeechKraft. Their tailored coaching sessions have refined my speaking style,
-                        improved my elocution, and instilled confidence in my delivery. Thanks to their guidance, I now
-                        speak with clarity, conviction, and captivate my audience like never before."</p>
-                </div>
-                <div class="testimonial-image">
-                    <img src="images/testimonialkids/asian boy.jpeg" alt="Kid Image">
-                </div>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-info">
-                    <p class="testimonial-rating">⭐️⭐️⭐️⭐️⭐️</p>
-                    <p class="testimonial-school">Killara High School</p>
-                    <p class="testimonial-student">S. Elliot — Y9</p>
-                    <p class="testimonial-quote">"I am amazed at the transformation in my public speaking abilities
-                        since working with SpeechKraft. Their tailored coaching sessions have refined my speaking style,
-                        improved my elocution, and instilled confidence in my delivery. Thanks to their guidance, I now
-                        speak with clarity, conviction, and captivate my audience like never before."</p>
-                </div>
-                <div class="testimonial-image">
-                    <img src="images/testimonialkids/schoolblueunifromgirl.jpeg" alt="Kid Image">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footerlogo">
-                <img src="images/logo/logo speechkraft transparent.png" alt="Logo">
-            </div>
-            <div class="contact-info">
-                <h4>Contact Us</h4>
-                <p>contact@speechkraft.com</p>
-                <div class="social-media">
-                    <a href="#"><img src="images/misc/socials/Facebook-logo-blue-circle-large-transparent-png.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/misc/socials/Instagram-Logo.wine.png" alt="Instagram"></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© 2023 SpeechKraft. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
-
+  </body>
 </html>

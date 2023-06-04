@@ -1,26 +1,37 @@
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-family: "Inter", sans-serif;
-  }
-  
-  h1, h2, h3 {
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-  }
-  
-  /* Navigation Bar */
-  .navbar {
-    background-color: #fff;
-    padding: 10px;
-  }
-  
-/* Add CSS rules to position the logo and company name */
-.navbar-container {
-    display: flex;
-    align-items: center;
-    padding: 15px;
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #3e3e3e;
+    font-weight: 700;
+    letter-spacing: 1;
+    font-family: 'Inter', sans-serif;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+a{
+    transition: all 0.4s ease;}
+
+img {
+    width: 100%;
+}
+
+small  {
+    color: #898fa1;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo {
@@ -35,14 +46,13 @@ body {
     object-fit: contain;
 }
 
-.company-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: auto;
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
 }
 
-  
-  .nav-links {
+.nav-links {
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -54,429 +64,6 @@ body {
     text-decoration: none;  /* Remove the underline */
     font-family: "Inter";
     font-weight: bold;
-    font-size: 19px;       
+    font-size: 19px;   
+    justify-content: center;    
   }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-btn {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;  /* Remove the underline */
-    font-family: "Inter";
-    font-weight: bold;
-    font-size: 19px;         
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 120px;
-    padding: 5px;
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    color: #333;
-    font-family: "Inter";
-    font-weight: bold;
-    font-size: 19px;         
-
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .get-in-touch {
-    margin-left: auto; /* Pushes the button to the right */
-  }
-  
-  .button {
-    background: linear-gradient(45deg, #ff0080, #8000ff);
-    color: #fff;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .button:hover {
-    opacity: 0.8;
-  }
-  
-  /* Hero Section */
-  .hero-section {
-    position: relative;
-    height: 75vh; /* Adjust the height as needed */
-    background-image: url(images/stockphotos/psfrontpagemicrophonecrowd.jpeg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: -20px;
-  }
-  
-  .hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 900px; /* Adjust the container max-width as needed */
-    margin: 0 auto;
-  }
-  
-  .hero-content {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #ffffff;
-  }
-
-  .gradient-text {
-    background: linear-gradient(to right, #ff6ac1, #a531f9);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    white-space: nowrap;
-    font-size: 80px;
-    width: 100%;
-    transform: scale(1.12); /* Scale the text by 1.2x */
-    transform-origin: center; /* Adjust the transform origin as needed */
-}
-
-  .gradient-text span {
-    display: inline-block;
-  }
-
-  .hero-section p {
-    font-size: 24px; /* Adjust the font size as needed */
-    color: #fff;
-    margin-bottom: 40px; /* Add some spacing */
-  }
-  
-  .gradient-button {
-    display: inline-block;
-    padding: 12px 30px;
-    border-radius: 30px;
-    background-image: linear-gradient(to right, #ff6ac1, #a531f9);
-    font-size: 18px; /* Adjust the gradient colors */
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-    margin-bottom: -10px;
-  }
-  
-/* Results Section */
-.results-section {
-    background-color: #f5f5f5;
-    padding: 3px 0;
-    text-align: center;
-    font-size: 50px;
-  }
-  
-  .results-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust the gap value as needed for spacing */
-  }
-  
-  .result-box {
-    background-color: #000;
-    color: #fff;
-    border-radius: 10px;
-    flex: 1; /* Allow the boxes to occupy available space */
-    min-width: 560px; /* Set a minimum width for the boxes */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    animation: boxAnimation 0.5s ease-in-out;
-  }
-  
-  .result-box .percentage {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .result-box .percentage-text {
-    font-size: 85px;
-    color: #fff;
-    background: linear-gradient(90deg, #FF00A6, #5A00FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; /* Standard */
-  }
-  
-  .result-box .description {
-    font-size: 23px;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 10px;
-  }
-  
-  .result-box .description .highlight-gradient {
-    background: linear-gradient(90deg, #FF00A6, #5A00FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; /* Standard */
-  }
-  
-  @keyframes boxAnimation {
-    0% {
-      transform: scale(0.9);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  
-  /* Testimonials Section */
-  .testimonial-section {
-    background-color: #f7f7f7;
-    padding: 50px 0;
-    margin-top: 40px;
-  }
-  
-  .testimonial {
-    display: flex;
-    margin-bottom: 40px;
-  }
-  
-  .testimonial-info {
-    flex-grow: 1;
-  }
-  
-  .testimonial-image {
-    margin-left: 20px;
-  }
-  
-  .testimonial-image img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover; /* Ensure the image fills the container */
-  }
-  
-  .testimonial-rating {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-school {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-student {
-    font-style: italic;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-quote {
-    margin-bottom: 20px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .footerlogo img {
-    width: 300px; /* Adjust as needed */
-  }
-  
-  .contact-info {
-    margin-left: 10px; /* Adjust as needed */
-  }
-  
-  .social-media img {
-    width: 20px; /* Adjust as needed */
-    margin-right: 5px; /* Adjust as needed */
-  }
-  
-  .social-media img:last-child {
-    margin-right: 0;
-  }
-  
-  .social-media a {
-    display: inline-block;
-  }
-  
-  .social-media a:hover img {
-    opacity: 0.7;
-  }
-  
-  p {
-    margin: 5px 0;
-  }
-  
-  h4 {
-    margin-bottom: 10px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .footerlogo img {
-    width: 300px; /* Adjust as needed */
-  }
-  
-  .contact-info {
-    margin-left: 10px; /* Adjust as needed */
-  }
-  
-  .social-media img {
-    width: 20px; /* Adjust as needed */
-    margin-right: 5px; /* Adjust as needed */
-  }
-  
-  .social-media img:last-child {
-    margin-right: 0;
-  }
-  
-  .social-media a {
-    display: inline-block;
-  }
-  
-  .social-media a:hover img {
-    opacity: 0.7;
-  }
-  
-  p {
-    margin: 5px 0;
-  }
-  
-  h4 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-container .copyright {
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    background-color: #000;
-    padding: 5px 0;
-  }
-  
-/* about.css */
-
-.about-section {
-    padding: 50px;
-    background-color: #f9f9f9;
-}
-
-.about-section h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 30px;
-}
-
-/* CONTACT FORM.css */
-
-.contact-section {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .contact-form {
-    margin-top: 30px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  select,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  textarea {
-    height: 120px;
-  }
-  
-  button.gradient-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #fff;
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button.gradient-button:hover {
-    background: linear-gradient(to right, #0072ff, #00c6ff);
-  }
-  
