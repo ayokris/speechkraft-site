@@ -6,21 +6,8 @@ body {
     font-size: 15px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: #3e3e3e;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-family: 'Inter', sans-serif;
-}
-
 img {
     width: 100%;
-}
-
-small  {
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 700;
 }
 
 section {
@@ -71,5 +58,86 @@ section {
 
   .navbar-nav {
     justify-content: center;
+    align-items: left;
+  }
+  .btn-pink-purple {
+    background: linear-gradient(to right, #ff69b4, #800080);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: auto;
+    border-radius: 20px;
+  }
+  
+  .btn-pink-purple:hover {
+    box-shadow: none;
   }
 
+/* HERO section */
+
+.hero-section {
+    position: relative;
+    min-height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black overlay */
+    z-index: 1; /* Move the overlay above the background image */
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2; /* Move the content above the overlay */
+  }
+  
+  .hero-section h1 {
+    background: linear-gradient(to right, #ff6ac1, #a531f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #fff;
+    margin-bottom: 40px; /* Add some spacing */
+  }
+
+
+  .hero-section .btn {
+    color: #fff; /* Set text color to white */
+  }
+
+  .btn {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 28px;
+    border-radius: 0;
+  }
+  
+  .btn-brand {
+    background: linear-gradient(to right, #ff6ac1, #a531f9);
+    color: #fff;
+  }
+  
+  .btn-brand:hover {
+    background: linear-gradient(to right, #ff6ac1, #a531f9);
+    color: #fff;
+  }
+  
