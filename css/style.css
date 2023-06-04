@@ -15,9 +15,6 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
 }
 
-a{
-    transition: all 0.4s ease;}
-
 img {
     width: 100%;
 }
@@ -45,25 +42,3 @@ section {
     height: 100%;
     object-fit: contain;
 }
-
-.navbar-container {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-}
-
-.nav-links {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-  }
-  
-  .nav-link {
-    margin: 0 20px; /* Adjust as needed */
-    color: #000;
-    text-decoration: none;  /* Remove the underline */
-    font-family: "Inter";
-    font-weight: bold;
-    font-size: 19px;   
-    justify-content: center;    
-  }
